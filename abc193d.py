@@ -14,20 +14,14 @@ def calc_point(k: int, s: list) -> int:
     return sumv
 
 
-def get_remain_cards(s, t, sealed_i, sealed_j):
-    s_c = s.copy()
-    t_c = t.copy()
-    s_c.append(sealed_i)
-    t_c.append(sealed_j)
-
-
 def main():
     k = int(input())
     s = list(input())
-    t = list(input())
     s.pop()
-    t.pop()
     s = list(map(int, s))
+
+    t = list(input())
+    t.pop()
     t = list(map(int, t))
 
     p = 0
